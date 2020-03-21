@@ -4,34 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        CreateLozengeWithStar c1 = new CreateLozengeWithStar();
+        c1.Craete();
 
-        int counter = 1;
-        int SpaceCounter = 3;
-        for (int i=0;i<4;i++){
-            System.out.print(RepeatStr(" ",SpaceCounter));
-            System.out.print(RepeatStr("*",counter));
-            counter +=2;
-            SpaceCounter--;
-            System.out.println("");
-        }
+        System.out.println("");
 
-        counter = 5;
-        SpaceCounter = 1;
-        for (int i=counter;i>0;i--){
-
-            System.out.print(RepeatStr(" ",SpaceCounter));
-            System.out.print(RepeatStr("*",counter));
-            counter -=2;
-            SpaceCounter++;
-            System.out.println("");
-        }
-    }
-
-    static String RepeatStr(String str,int counter){
-        String result = "";
-        for (int i=0;i<counter;i++){
-            result += str;
-        }
-        return result;
+        CreateAWithStar a1  = new CreateAWithStar();
+        a1.create();
     }
 }
